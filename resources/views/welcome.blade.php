@@ -55,8 +55,8 @@
 		
 	</nav>
 	<div class="navbar-menu relative z-50 hidden">
-		<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-		<nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-slate-600 border-r overflow-y-auto">
+		<div class="navbar-backdrop fixed inset-0 bg-fuchsia-900 opacity-25"></div>
+		<nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-fuchsia-900 border-r overflow-y-auto">
 			<div class="flex items-center mb-8">
 				<a class="mr-auto text-3xl font-bold leading-none" href="#">
 					<img src="/logo2.svg" alt="">   
@@ -70,16 +70,16 @@
 			<div>
 				<ul>
 					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Inicio</a>
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-fuchsia-900 rounded" href="#">Inicio</a>
 					</li>
 					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Nosotros</a>
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-fuchsia-900 rounded" href="#">Nosotros</a>
 					</li>
 					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Perritos</a>
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-fuchsia-900 rounded" href="#">Perritos</a>
 					</li>
 					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Contacto</a>
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-fuchsia-900 rounded" href="#">Contacto</a>
 					</li>
 					
 				</ul>
@@ -108,6 +108,68 @@
             </div>
         </div>
     </div>
+
+
+	<section class="p-16">
+
+	<div class="max-w-3xl mx-auto mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="bg-white rounded-lg overflow-hidden shadow-md transition duration-300 transform hover:scale-105">
+            <img src="https://via.placeholder.com/300x200" alt="Product Image" class="w-full">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold">Product Name</h3>
+                <p class="text-gray-600">$99.99</p>
+                <a href="https://www.example.com" class="mt-4 px-4 py-2 bg-fuchsia-900 text-white rounded hover:text-fuchsia-900 hover:bg-slate-50 inline-block">Comprar</a>
+            </div>
+        </div>
+
+        <!-- Repite este bloque para cada producto -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md transition duration-300 transform hover:scale-105">
+            <img src="https://via.placeholder.com/300x200" alt="Product Image" class="w-full">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold">Product Name</h3>
+                <p class="text-gray-600">$99.99</p>
+                <a href="https://www.example.com" class="mt-4 px-4 py-2 bg-fuchsia-900 text-white rounded hover:bg-white inline-block">Comprar</a>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg overflow-hidden shadow-md transition duration-300 transform hover:scale-105">
+            <img src="https://via.placeholder.com/300x200" alt="Product Image" class="w-full">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold">Product Name</h3>
+                <p class="text-gray-600">$99.99</p>
+                <a href="https://www.example.com" class="mt-4 px-4 py-2 bg-fuchsia-900 text-white rounded hover:bg-white inline-block">Comprar</a>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg overflow-hidden shadow-md transition duration-300 transform hover:scale-105">
+            <img src="https://via.placeholder.com/300x200" alt="Product Image" class="w-full">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold">Product Name</h3>
+                <p class="text-gray-600">$99.99</p>
+                <a href="https://www.example.com" class="mt-4 px-4 py-2 bg-fuchsia-900 text-white rounded hover:bg-white inline-block">Comprar</a>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg overflow-hidden shadow-md transition duration-300 transform hover:scale-105">
+            <img src="https://via.placeholder.com/300x200" alt="Product Image" class="w-full">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold">Product Name</h3>
+                <p class="text-gray-600">$99.99</p>
+                <a href="https://www.example.com" class="mt-4 px-4 py-2 bg-fuchsia-900 text-white rounded hover:bg-white inline-block">Comprar</a>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg overflow-hidden shadow-md transition duration-300 transform hover:scale-105">
+            <img src="https://via.placeholder.com/300x200" alt="Product Image" class="w-full">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold">Product Name</h3>
+                <p class="text-gray-600">$99.99</p>
+                <a href="https://www.example.com" class="mt-4 px-4 py-2 bg-fuchsia-900 text-white rounded hover:bg-white inline-block">Comprar</a>
+            </div>
+        </div>
+    </div>
+
+	</section>
 
     
 
