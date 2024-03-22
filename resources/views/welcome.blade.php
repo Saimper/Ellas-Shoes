@@ -95,6 +95,22 @@
 	</div>
 
 
+	<div class="max-w-3xl mx-auto mt-10 relative rounded-lg overflow-hidden">
+        <div class="carousel overflow-hidden">
+            <div class="carousel-inner flex transition-transform ease  ">
+                <img class="carousel-slide w-full bg-blue-200" src="https://via.placeholder.com/800x400?text=Slide+1" alt="Slide 1">
+                <img class="carousel-slide w-full bg-green-200" src="https://via.placeholder.com/800x400?text=Slide+2" alt="Slide 2">
+                <img class="carousel-slide w-full bg-yellow-200" src="https://via.placeholder.com/800x400?text=Slide+3" alt="Slide 3">
+            </div>
+            <div class="carousel-controls absolute top-1/2 transform -translate-y-1/2 left-0 right-0 flex justify-between">
+                <button class="carousel-control p-2 bg-gray-800 text-white rounded-full" id="prevBtn">&#10094;</button>
+                <button class="carousel-control p-2 bg-gray-800 text-white rounded-full" id="nextBtn">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+    
+
 <script>
 // Burger menus
 document.addEventListener('DOMContentLoaded', function() {
@@ -136,15 +152,34 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+
+
+const carouselInner = document.querySelector('.carousel-inner');
+        const slides = document.querySelectorAll('.carousel-slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let currentIndex = 0;
+
+        function goToSlide(index) {
+            carouselInner.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        function goToNextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            goToSlide(currentIndex);
+        }
+
+        function goToPrevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            goToSlide(currentIndex);
+        }
+
+        nextBtn.addEventListener('click', goToNextSlide);
+        prevBtn.addEventListener('click', goToPrevSlide);
+
+        // Autoplay
+        setInterval(goToNextSlide, 3000); // Cambia de slide cada 3 segundos
 </script>
-
-
-
-
-
-
-  
-
-    
 </body>
 </html>
